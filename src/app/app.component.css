@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline&display=swap');
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+nav p{
+  display: inline-block;
+  padding: 7px 20px;
+  font-size: 40px;
+  font-family: 'Kumar One Outline', cursive;
+  text-shadow: 0 0 10px rgb(0, 153, 255);
+}
+nav>ul{
+  display: inline-block;
+  text-align: right;
+  padding-top: 25px;
+}
+nav>ul>a>li{
+  display: inline-block;
+  padding: 7px 20px;
+  margin: 5px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px rgb(0, 153, 255);
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+}
+nav>ul>a>li:hover{
+  transform: scale(1.15, 1);
+  /* padding: 7px 30px; */
+  background: transparent;
+  box-shadow: 0 0 10px white;
+  background: rgba(23, 162, 255, 0.445);
+}
