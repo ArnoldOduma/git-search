@@ -3,16 +3,30 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { UserRequestService } from './user-http/user-request.service';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { AboutComponent } from './components/about/about.component';
+import { RoutingModule } from './routing/routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MDBBootstrapModule.forRoot(),
+    RoutingModule
   ],
-  providers: [],
+  providers: [UserRequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
