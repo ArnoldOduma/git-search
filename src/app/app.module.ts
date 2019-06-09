@@ -10,12 +10,16 @@ import { UserRequestService } from './user-http/user-request.service';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AboutComponent } from './components/about/about.component';
 import { RoutingModule } from './routing/routing.module';
+import { DateCountPipe } from './date-count.pipe';
+import { SearchDirective } from './search.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    DateCountPipe,
+    SearchDirective
   ],
   imports: [
     BrowserModule,
