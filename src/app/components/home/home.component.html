@@ -1,6 +1,6 @@
 <div class="search_cont">
   <form action="" #userSearch="ngForm" (ngSubmit)='searchGit(userSearch.name);userSearch.reset()'>
-    <p class="alert" *ngIf='!name.valid && name.touched'>Error Enter a name or repo to search</p>
+    <p class="alert" *ngIf='!name.valid && name.touched'>Error Enter a name or repository to search</p>
     <input type="text" #name='ngModel' name="name" [(ngModel)]="userSearch.name" placeholder="Search Github ..."
       required>
     <button type="submit" [disabled]='!userSearch.form.valid'>Search</button>

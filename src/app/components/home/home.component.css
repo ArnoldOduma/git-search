@@ -3,8 +3,9 @@
 }
 .search_cont{
   background: rgb(36, 36, 36);
-  padding: 20px;
+  padding: 5px;
   text-align: center;
+  margin-bottom: 20px;
 }
 .search_cont form{
   display: inline-block;
@@ -26,7 +27,7 @@
   border-radius: 20px;
   padding: 10px 50px;
   background: rgba(56, 167, 241, 0.6);
-  margin: 10px 0;
+  margin: 5px 0;
   cursor: pointer;
   outline: transparent;
   transition: all 0.2s ease-out;
@@ -123,20 +124,21 @@
   padding: 0 10px;
   padding-top: 10px;
   text-align: center;
-  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/darkness.png');
-  background-position: center;
-  background-size: cover;
+  background: rgba(0, 0, 0, 0.432);
 }
 .repos h4{
   text-transform: uppercase;
   max-width: 100%;
   font-size: 1.3em;
   margin-bottom: 10px;
+  padding: 10px;
+  text-decoration: underline;
 }
 .repos .desc{
   min-height: 70px;
 }
 .repos a{
+  display: inline-block;
   font-size: 1em;
   padding: 10px;
   background: rgb(30, 95, 138);
@@ -151,7 +153,7 @@
 .repos .date{
   bottom: 0px;
   margin-top: 30px;
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(80, 80, 80);
   padding: 10px 0;
 }
 
@@ -159,5 +161,18 @@
 @media only screen and (max-width: 500px){
   .search_cont form input{
     width: 100%;
+  }
+  .user_detail h2{
+    font-size: 1.2em;
+  }
+  .repos{
+    width: 40%;
+    font-size: 0.8em;
+    box-shadow: 0 0 0;
+    border-top: 1px solid gray; 
+    border-radius: 0px;
+  }
+  .repos a{
+    font-size: 1em;
   }
 }
