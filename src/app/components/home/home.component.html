@@ -1,0 +1,41 @@
+<div class="search_cont">
+  <form action="" #userSearch="ngForm" (ngSubmit)='searchGit(userSearch.name);userSearch.reset()'>
+    <p class="alert" *ngIf='!name.valid && name.touched'>Error Enter a name or repo to search</p>
+    <input type="text" #name='ngModel' name="name" [(ngModel)]="userSearch.name" placeholder="Search Github ..."
+      required>
+    <button type="submit" [disabled]='!userSearch.form.valid'>Search</button>
+  </form>
+</div>
+<p *ngIf='userInfo.public_repos == null '>Loading..</p>
+<div class="user_detail ">
+  <h2 class="text-center">{{userInfo.name}}</h2>
+  <div class="img">
+    <img  src={{userInfo.avatar_url}} alt="avatar" width=100%>
+    <div class="rot">1</div>
+  </div>
+
+  <p>
+    <span class="user"><i class="fas fa-user"></i>{{userInfo.login}}</span><br>
+    <span class="follow"><i class="fas fa-user-friends"></i> Followers: {{userInfo.followers}}</span>
+    <span class="follow"><i class="fas fa-user-friends"></i>Following: {{userInfo.following}}</span>
+    <span class="follow"><i class="fas fa-boxes"></i> Repos: {{userInfo.public_repos}}</span>
+  </p><br>
+  <p class="text-center">
+    <a href={{userInfo.html_url}} target="_blank"><span>Checkout {{userInfo.login}} on git</span></a>
+  </p>
+</div>
+
+
+<div>
+  <h2 id="repos" class="text-center" *ngIf='userInfo.public_repos > 0'>Repositories</h2>
+  <section class="d-flex flex-wrap justify-content-center text-center">
+    <div *ngFor="let userRepo of userRepos" class="repos">
+      <h4>{{userRepo.name}}</h4>
+      <p class="desc">{{userRepo.description}}</p>
+      <a href={{userRepo.html_url}} target="_blank">Check out
+          {{userRepo.name}}</a>
+      <p class="date">Created on: {{userRepo.created_at | date }}</p>
+    </div>
+  </section>
+
+</div>

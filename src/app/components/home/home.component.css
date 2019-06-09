@@ -1,0 +1,163 @@
+.alert{
+  color: red;
+}
+.search_cont{
+  background: rgb(36, 36, 36);
+  padding: 20px;
+  text-align: center;
+}
+.search_cont form{
+  display: inline-block;
+}
+::placeholder{
+  color: rgb(170, 170, 170);
+}
+.search_cont form input{
+  width: 70vw;
+  background: none;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  color: white;
+}
+.search_cont form button{
+  border: none;
+  border-radius: 20px;
+  padding: 10px 50px;
+  background: rgba(56, 167, 241, 0.6);
+  margin: 10px 0;
+  cursor: pointer;
+  outline: transparent;
+  transition: all 0.2s ease-out;
+}
+.search_cont form button[disabled]{
+  background: rgb(14, 14, 14);
+  color: rgb(102, 101, 101);
+}
+.search_cont form button[disabled]:hover{
+  box-shadow: 0 0 0px white;
+  background: rgb(14, 14, 14);
+  color: rgb(102, 101, 101);
+}
+.search_cont>form>button:hover{
+  box-shadow: 0 0 10px white;
+  background: transparent;
+  color: white;
+}
+.search_cont>form>input:focus{
+  background: none;
+  outline: transparent;
+  background: none;
+  text-align: center;
+}
+.user_detail{
+  width: 650px;
+  padding: 10px;
+  max-width: 100%;
+  color: grey;
+  font-size: 18px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  box-shadow: 10px 5px 10px rgba(0, 162, 255, 0.096);
+}
+.user_detail h2{
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.199);
+  text-transform: uppercase;
+  /* margin-bottom: 10px; */
+  color: white;
+}
+.img{
+  width: 100px;
+  height: 100px;
+  background: rgb(42, 117, 151);
+  border-radius: 50%;
+  position:   absolute;
+  top: -15px;
+  left: 0px;
+  overflow: hidden;
+}
+.user_detail span{
+  margin: 0px 10px 10px 0;
+  padding: 4px 5px;
+}
+.user_detail span i{
+  padding-right: 10px;
+}
+.user_detail .user{
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 1.3em;
+}
+.follow{
+  font-size: 0.8em;
+  color: white;
+}
+.user_detail a{
+  display: inline-block;
+  margin: 0px 10px 10px 0;
+  background: rgba(56, 167, 241, 0.438);
+  border-radius: 3px;
+  padding: 4px 10px;
+  color: white;
+  cursor: pointer;
+}
+.user_detail a:hover{
+  box-shadow: 0 0 10px white;
+  background: transparent;
+}
+#repos{
+  padding: 20px;
+  text-transform: uppercase;
+}
+.repos{
+  width: 45%;
+  max-width: 100%;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 140, 255, 0.404);
+  border-radius: 5px;
+  padding: 0 10px;
+  padding-top: 10px;
+  text-align: center;
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/darkness.png');
+  background-position: center;
+  background-size: cover;
+}
+.repos h4{
+  text-transform: uppercase;
+  max-width: 100%;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+.repos .desc{
+  min-height: 70px;
+}
+.repos a{
+  font-size: 1em;
+  padding: 10px;
+  background: rgb(30, 95, 138);
+  color: white;
+  border-radius: 5px;
+}
+.repos a:hover{
+  background: transparent;
+  box-shadow: 0 0 10px rgba(0, 140, 255, 0.404);
+}
+
+.repos .date{
+  bottom: 0px;
+  margin-top: 30px;
+  border-top: 1px solid white;
+  padding: 10px 0;
+}
+
+
+@media only screen and (max-width: 500px){
+  .search_cont form input{
+    width: 100%;
+  }
+}
