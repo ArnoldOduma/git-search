@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  color: white;
+  background: url('https://www.toptal.com/designers/subtlepatterns/patterns/darkness.png'), rgb(20, 20, 20);
+  background-attachment: fixed;
+}
+a{
+  text-decoration: none;
+}
