@@ -24,7 +24,7 @@ export class UserRequestService {
     }
     // tslint:disable-next-line: max-line-length
     return this._http.get<IApiResponse>('https://api.github.com/users/'
-      + name + '?access_token=' + environment.secretKey).pipe(map(res => res)); 
+      + name + '?access_token=' + environment.secretKey).pipe(map(res => res));
   }
   userRepos(name: string) {
     interface IApiResponse {
